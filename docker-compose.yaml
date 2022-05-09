@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  service1:
+    image: rwright1992/animals1:latest
+    build: ./api1/application
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+  service2:
+    image: rwright1992/animals2:latest
+    build: ./api2/application
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
