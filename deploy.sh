@@ -1,6 +1,6 @@
 #Build Images
-docker build -t service1 api1
-docker build -t service2 api2
+docker build -t service1 api1/application
+docker build -t service2 api2/application
 
 #Create Docker Network
 docker network create apinetwork
