@@ -3,6 +3,7 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
 @app.route('/animal/noise', methods=['GET'])
 def get_noise():
     animal = requests.get('http://service2:5001/get/animal')
