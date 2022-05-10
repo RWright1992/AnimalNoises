@@ -9,13 +9,13 @@ def get_noise():
     animal = requests.get('http://service2:5001/get/animal')
     animal_text = animal.text
     if animal_text == 'Dog':
-        noise = 'Woof'
+        noise = 'Bark'
     elif animal_text == 'Cow':
-        noise = 'Moo'
+        noise = 'Moove'
     elif animal_text == 'Cat':
-        noise = 'Meow'
+        noise = 'Sign'
     else:
-        noise = 'Neigh'
+        noise = 'I am a horse'
     return render_template('home.html', title='Animal Noise', animal=animal_text, noise=noise)
 
 if __name__ == '__main__':
