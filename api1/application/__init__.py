@@ -13,7 +13,7 @@ def get_noise():
     elif animal_text == 'Cow':
         noise = 'Moove'
     elif animal_text == 'Cat':
-        noise = 'Sigh'
+        noise = 'I cat'
     else:
         noise = 'I am a horse'
     return render_template('home.html', title='Animal Noise', animal=animal_text, noise=noise)
